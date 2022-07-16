@@ -9,7 +9,6 @@ type Props = {
 
 const Home: NextPage<Props> = ({ todos, setTodos }) => {
   const toggleIsDone = (id: Todo["id"]) => {
-    console.log(id);
     setTodos((prevTodos) => {
       return prevTodos.map((todo) => {
         if (todo.id === id) {
