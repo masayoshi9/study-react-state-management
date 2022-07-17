@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { ComponentProps, useContext } from "react";
 import { TodoContext } from "./_app";
 
-const Home: NextPage = () => {
+const Add: NextPage = () => {
   const { setTodos } = useContext(TodoContext);
 
   const handleSubmit: ComponentProps<"form">["onSubmit"] = (event) => {
@@ -26,4 +26,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Add;

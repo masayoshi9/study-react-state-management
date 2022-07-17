@@ -6,7 +6,7 @@ type Props = {
   setTodos: Dispatch<SetStateAction<Todo[]>>;
 };
 
-const Home: NextPage<Props> = ({ setTodos }) => {
+const Add: NextPage<Props> = ({ setTodos }) => {
   const handleSubmit: ComponentProps<"form">["onSubmit"] = (event) => {
     event.preventDefault();
     const text = event.currentTarget.text.value;
@@ -28,4 +28,4 @@ const Home: NextPage<Props> = ({ setTodos }) => {
   );
 };
 
-export default Home;
+export default Add;
